@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BMC Walkable Theatre</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.164.1/build/three.module.js"
+      }
+    }
+  </script>
+
+  <!-- Optional HLS helper for live .m3u8 streams in browsers that need it. -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+</head>
+<body>
+  <main id="app" aria-label="Balcony Music Club walkable theatre">
+    <canvas id="world"></canvas>
+
+    <section id="boot" class="panel boot">
+      <div class="titlebar">
+        <span>BMCTheatre.exe</span>
+        <span>□ ×</span>
+      </div>
+      <div class="panel-body">
+        <p class="eyebrow">MEWTWO VENUE BUILDER // WALKABLE THEATRE V1</p>
+        <h1>Balcony Music Club Theatre</h1>
+        <p>
+          A walkable venue website: marquee exterior, poster lobby, BMC-shaped bar room,
+          and a clickable theatre screen for static videos or live broadcast.
+        </p>
+        <button id="enter-world" type="button" class="button">ENTER THEATRE</button>
+      </div>
+    </section>
+
+    <section class="hud">
+      <div>
+        <strong id="hud-title">BMC Walkable Theatre</strong>
+        <span id="hud-subtitle">Posters are the menu. The screen is the broadcast.</span>
+      </div>
+      <div id="hint">WASD move • Mouse look • E / click interact • Shift sprint • Esc release</div>
+    </section>
+
+    <section id="dialogue" class="panel dialogue hidden" aria-live="polite">
+      <div class="titlebar">
+        <span id="dialogue-title">SYSTEM</span>
+        <span>×</span>
+      </div>
+      <div class="panel-body">
+        <p id="dialogue-text"></p>
+        <div id="dialogue-actions"></div>
+        <button id="dialogue-close" type="button" class="button">CLOSE</button>
+      </div>
+    </section>
+
+    <section id="player-modal" class="player-modal hidden" aria-live="polite">
+      <div class="player-card">
+        <div class="player-topbar">
+          <div>
+            <strong id="player-title">BMC Screen</strong>
+            <span id="player-meta">Video / live broadcast</span>
+          </div>
+          <button id="player-close" type="button" class="button">CLOSE</button>
+        </div>
+
+        <video id="video-player" controls playsinline preload="metadata" poster=""></video>
+        <iframe id="iframe-player" title="Embedded broadcast player" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+        <p id="player-status">
+          Choose a poster or the theatre screen. Static MP4 and HLS/live stream modes are wired in.
+        </p>
+      </div>
+    </section>
+
+    <div id="toolbar" class="toolbar">
+      <button id="fullscreen" type="button" class="button">Fullscreen</button>
+      <button id="quality" type="button" class="button">Quality: High</button>
+      <button id="reset" type="button" class="button">Reset</button>
+    </div>
+
+    <div id="touch-controls" class="touch-controls" aria-hidden="true">
+      <div id="touch-stick" class="touch-stick"><span></span></div>
+      <button id="touch-action" type="button" class="touch-action button">ACTION</button>
+    </div>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
