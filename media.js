@@ -4,18 +4,18 @@ export const venueConfig = {
   marqueeBottom: 'FRENCH QUARTER POSTER MAZE • LIVE MUSIC • NEON'
 };
 
-// Management schedule supplied 2026-09-28. Billings are verbatim; blanks are TBA.
+// Management schedule revised 2026-10-01. Billings are verbatim; blanks are TBA.
 // Only starts were supplied. The existing 150-minute block convention is used
 // solely to expire poster listings. No performance media or live status is inferred.
 const DAYS = [
   ['2026-10-01', [[18, 'DAPPER DANDIES'], [21, 'KAT KILEY EXPERIENCE']]],
   ['2026-10-02', [[18, 'ELECTRIC BARRELHOUSE'], [21, 'BIG MIKE & RB KINGS']]],
-  ['2026-10-03', [[15, 'ANDRE LOVETT BAND'], [18, 'TBA'], [21, 'RR SMOKIN FOUNDATION']]],
+  ['2026-10-03', [[15, 'PARISH LINE'], [18, 'JOSH BENITEZ BAND'], [21, 'ANDRE LOVETT BAND']]],
   ['2026-10-04', [[15, 'DEEJ FK & MOTHER RUCKUS'], [18, 'JAM BRASS BAND'], [21, 'ARMANI SMITH']]],
   ['2026-10-08', [[18, 'MAURICE CADE & ESS'], [21, 'KAT KILEY EXPERIENCE']]],
   ['2026-10-09', [[18, 'ELECTRIC BARRELHOUSE'], [21, 'BIG MIKE & RB KINGS']]],
-  ['2026-10-10', [[15, 'TROPICAL WEATHER'], [18, 'SUGAR & THE DADDIES'], [21, 'TBA']]],
-  ['2026-10-11', [[15, 'DEEJ FK & MOTHER RUCKUS'], [18, 'JAM BRASS BAND'], [21, 'TBA']]],
+  ['2026-10-10', [[15, 'TROPICAL WEATHER'], [18, 'TBA'], [21, 'KEEP IT ROLLING BRASS BAND']]],
+  ['2026-10-11', [[15, 'DEEJ FK & MOTHER RUCKUS'], [18, 'JAM BRASS BAND'], [21, 'KIM IN THE WIND']]],
   ['2026-10-15', [[18, 'DAPPER DANDIES'], [21, 'KAT KILEY EXPERIENCE']]],
   ['2026-10-16', [[18, 'PARISH LINE'], [21, 'CAESAR BROS']]],
   ['2026-10-17', [[15, 'TROPICAL WEATHER'], [18, 'SUGAR & THE DADDIES'], [21, 'TAMARIE T PLAYMATZ']]],
@@ -23,10 +23,10 @@ const DAYS = [
   ['2026-10-22', [[18, 'MAURICE CADE & ESS'], [21, 'KAT KILEY EXPERIENCE']]],
   ['2026-10-23', [[18, 'PARISH LINE'], [21, 'BIG MIKE & RB KINGS']]],
   ['2026-10-24', [[15, 'TROPICAL WEATHER'], [18, 'GABE STILLMAN'], [21, 'ESSENTIALS']]],
-  ['2026-10-25', [[15, 'DEEJ FK & MOTHER RUCKUS'], [18, 'JAM BRASS BAND'], [21, 'TBA']]],
-  ['2026-10-29', [[18, 'DAPPER DANDIES'], [21, 'KEEPING IT ROLLIN’ BRASS BAND']]],
+  ['2026-10-25', [[15, 'DEEJ FK & MOTHER RUCKUS'], [18, 'JAM BRASS BAND'], [21, 'FUNKY SOLES']]],
+  ['2026-10-29', [[18, 'DAPPER DANDIES'], [21, 'KEEP IT ROLLING BRASS BAND']]],
   ['2026-10-30', [[18, 'MOTHER RUCKUS'], [21, 'BIG MIKE & RB KINGS']]],
-  ['2026-10-31', [[15, 'TROPICAL WEATHER'], [18, '(SUGAR)((RONIGER)(ADO)'], [21, 'KAT KILEY EXPERIENCE']]]
+  ['2026-10-31', [[15, 'TROPICAL WEATHER'], [18, 'TBA'], [21, 'KAT KILEY EXPERIENCE']]]
 ];
 
 export const octoberSchedule = DAYS.flatMap(([date, acts]) =>
